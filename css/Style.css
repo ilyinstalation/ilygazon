@@ -1,0 +1,67 @@
+body {
+  background: #f4f4f4;
+}
+
+/* HERO */
+.hero {
+  background-image: url('../images/gazon.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+/* BOUTON PRO */
+.action-button {
+  padding: 14px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  border: none;
+  background: linear-gradient(135deg, #00ff1e, #00cc16);
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.action-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* ANIMATION */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.8s;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #00ff1e20, #00cc1620);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .services-grid {
+    flex-direction: column;
+  }
+
+  .service-card {
+    width: 90%;
+  }
+}
